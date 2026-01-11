@@ -1,0 +1,23 @@
+.header {
+  position: sticky;
+  top: 0;
+  max-width: 100%;
+  border-bottom: .15rem solid $grey-15;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem $width-container;
+}
+
+.logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__name {
+    margin-left: 1rem;
+    font-size: 24px;
+    font-weight: 600;
+  }
+}

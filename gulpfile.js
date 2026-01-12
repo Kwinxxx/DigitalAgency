@@ -18,6 +18,8 @@ const webpackStream = require('webpack-stream');
 const browserSync = require("browser-sync").create();
 
 
+/*gulp-file-include*/
+
 /* Paths */
 const srcPath = 'src/';
 const distPath = 'dist/';

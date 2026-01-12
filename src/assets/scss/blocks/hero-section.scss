@@ -1,4 +1,12 @@
 .hero-section {
-  background-image: url("assets/images/hero-image.svg");
-  background-size: cover;
+  width: 100%;
+  align-items: center;
+  padding-top: 11rem;
 }
+
+.hero-section__descriptor {
+  font-weight: 600;
+  font-family: inherit;
+  font-size: 6.8rem;
+  text-align: center;
+  }

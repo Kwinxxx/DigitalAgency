@@ -1,8 +1,11 @@
 {
-    "name": "brainscloud",
+    "name": "Digital Agency",
     "version": "1.0.0",
-    "description": "brainscloud",
-    "author": "brainscloud",
+    "description": "Digital Agency",
+    "author": "Digital Agency",
+    "scripts": {
+        "dev": "gulp"
+    },
     "devDependencies": {
         "@babel/core": "^7.16.0",
         "@babel/preset-env": "^7.16.4",
@@ -23,9 +26,9 @@
         "gulp-strip-css-comments": "^2.0.0",
         "gulp-uglify": "^3.0.2",
         "panini": "^1.7.2",
+        "sass": "^1.43.4",
         "webpack": "^5.64.3",
-        "webpack-stream": "^7.0.0",
-        "sass": "^1.43.4"
+        "webpack-stream": "^7.0.0"
     },
     "browserslist": [
         "last 1 version",

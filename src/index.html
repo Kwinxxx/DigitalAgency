@@ -13,14 +13,14 @@ that will Work</div>
      and <span class="blur-text">Social Good</span></div>
 
   <div class="hero-section__btn">
-    <a href="#" class="btn btn-our-works">Our Works</a>
+    <a href="#" class="btn btn--our-works">Our Works</a>
     <button class="btn btn--contact-us">Contact Us</button>
   </div>
 
 </div>
 
 <div class="sponsors-section">
-  <img src="assets/images/sponsors/zapier.png" alt="png" class="sponsors-section__card">
+  <img src="assets/images/sponsors/adobe.png" alt="png" class="sponsors-section__card">
   <img src="assets/images/sponsors/spotify.png" alt="png" class="sponsors-section__card">
   <img src="assets/images/sponsors/zoom.png" alt="png" class="sponsors-section__card">
 
@@ -30,5 +30,20 @@ that will Work</div>
 
   <img src="assets/images/sponsors/slack.png" alt="png" class="sponsors-section__card">
   <img src="assets/images/sponsors/amazon.png" alt="png" class="sponsors-section__card">
-  <img src="assets/images/sponsors/adobe.png" alt="png" class="sponsors-section__card">
+  <img src="assets/images/sponsors/zapier.png" alt="png" class="sponsors-section__card">
+</div>
+
+
+<div class="our-service">
+  <div class="our-service--wrapper">
+    <div class="our-service--wrapper__title">Our Services</div>
+    <p class="our-service--wrapper__subtitle">Transform your brand with our
+    innovative digital solutions that captivate and engage your
+    audience.</p>
+  </div>
+  <div class="our-service--items">
+    {{#each our-service.items}}
+      {{>our-service-card}}
+    {{/each}}
+  </div>
 </div>

@@ -207,6 +207,7 @@ function clean(cb) {
     cb();
 }
 
+
 function watchFiles() {
     gulp.watch([path.watch.html], html);
     gulp.watch([path.watch.css], cssWatch);

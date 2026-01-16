@@ -16,6 +16,10 @@ body {
     overflow: hidden;
 }
 
+.main {
+
+}
+
 a,li, button {
     text-decoration: none;
     color: inherit;
@@ -29,3 +33,5 @@ a,li, button {
 @import 'blocks/main';
 @import 'blocks/btn';
 @import 'blocks/hero-section';
+@import 'blocks/sponsors';
+@import 'blocks/our-service';

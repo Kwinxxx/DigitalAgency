@@ -16,6 +16,7 @@ const notify = require("gulp-notify");
 const webpack = require('webpack');
 const webpackStream = require('webpack-stream');
 const browserSync = require("browser-sync").create();
+const fileinclude = require('gulp-file-include');
 
 
 /*gulp-file-include*/

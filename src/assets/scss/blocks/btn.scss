@@ -5,12 +5,19 @@
   border-radius: $btn-border-radius;
 
   font-weight: 500;
-  font-size: 18px;
+  font-size: 1.8rem;
   color: $grey-15;
 
   white-space: nowrap;
 
   &--contact-us {
     background: $green-50;
+    color: $grey-15
+  }
+
+  &-our-works {
+    color: $white;
+    background: #242424;
+    border: 1px solid $grey-20;
   }
 }

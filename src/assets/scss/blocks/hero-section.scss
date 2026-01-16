@@ -1,12 +1,51 @@
 .hero-section {
+  display: flex;
+  flex-direction: column;
   width: 100%;
   align-items: center;
   padding-top: 11rem;
-}
+  border: .15rem solid $grey-15;
 
-.hero-section__descriptor {
+  &__descriptor {
   font-weight: 600;
   font-family: inherit;
   font-size: 6.8rem;
   text-align: center;
   }
+
+  &__table {
+  display: inline-flex;
+  margin-top: 4rem;
+  margin-bottom: 5rem;
+  padding: 2.4rem 4rem;
+  border-radius: 1.2rem;
+  align-items: center;
+
+
+  background: rgba($grey-15, 0.2);
+  border: 1px solid $grey-20;
+  opacity: 0.8;
+  backdrop-filter: blur(12);
+  color: $grey-60;
+  font-size: 2.2rem;
+
+  }
+    &__btn {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    margin-bottom: 26.5rem;
+  }
+}
+
+.blur-text {
+  font-size: inherit;
+  font-weight: 400;
+  color: $white;
+  background-color: $grey-15;
+  padding: 1.2rem 1.4rem;
+  border-radius: 0.8rem;
+
+  margin-inline: 0.6rem;
+}
+

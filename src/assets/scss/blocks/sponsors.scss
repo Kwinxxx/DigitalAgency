@@ -1,0 +1,33 @@
+.sponsors-section {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 2rem;
+
+  max-width: 100%;
+  align-items: center;
+  padding: 4rem 0;
+  justify-content: center;
+
+  background-color: rgba(#242424,0.2);
+  border: .15rem solid $grey-15;
+
+  &__card {
+    padding: 2rem 5.5rem;
+  }
+
+  &__mark {
+    position: absolute;
+    top: -3rem;
+    right: calc(50% - 12rem);
+    text-align: center;
+    padding: 2rem 3.5rem;
+    border: 0.15rem solid $grey-15;
+    border-radius: 10rem;
+
+    background-color: $grey-10;
+
+    color: $green-99;
+    font-weight: 500;
+  }
+}

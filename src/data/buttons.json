@@ -1,0 +1,19 @@
+{
+  "buttons": [
+    {
+      "title": "Contact Us",
+      "btn-style": "btn--contact-us",
+      "btn-location": ""
+    },
+    {
+      "title": "Our works",
+      "btn-style": "btn--our-works",
+      "btn-location": ""
+    },
+    {
+      "title": "Learn More",
+      "btn-style": "btn--learn-more",
+      "btn-location": "btn--learn-more-location"
+    }
+  ]
+}

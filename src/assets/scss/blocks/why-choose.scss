@@ -1,0 +1,44 @@
+.why-choose--items {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0;
+}
+
+.why-choose-card {
+  padding: 8rem;
+  border: 0.15rem solid $grey-15;
+}
+
+.why-choose-content {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+
+  &__title {
+    font-family: inherit;
+    font-size: 2.6rem;
+    font-weight: 500;
+    color: $white;
+  }
+
+  &__icon {
+    padding: 2.4rem;
+    border-radius: 1rem;
+    background: linear-gradient(#242424, transparent);
+    object-fit: cover;
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
+
+.why-choose-description {
+  font-family: inherit;
+  font-size: 2rem;
+  font-weight: 400;
+  margin: 0;
+  letter-spacing: -0.6%;
+  line-height: 150%;
+  margin-top: 4rem;
+
+  color: $grey-90;
+}

@@ -5,6 +5,11 @@
   align-items: center;
   padding-top: 11rem;
   border: .15rem solid $grey-15;
+  background-image: url(".././images/hero-image.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  object-fit: cover;
+
 
   &__descriptor {
   font-weight: 600;
@@ -23,9 +28,9 @@
 
 
   background: rgba($grey-15, 0.2);
+  backdrop-filter: blur($blur);
   border: 1px solid $grey-20;
   opacity: 0.8;
-  backdrop-filter: blur(12);
   color: $grey-60;
   font-size: 2.2rem;
 

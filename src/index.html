@@ -34,16 +34,30 @@ that will Work</div>
 </div>
 
 
-<div class="our-service">
-  <div class="our-service--wrapper">
-    <div class="our-service--wrapper__title">Our Services</div>
-    <p class="our-service--wrapper__subtitle">Transform your brand with our
-    innovative digital solutions that captivate and engage your
-    audience.</p>
+<div class="our-service-section">
+  {{#with describe.items.[0]}}
+  <div class="describe--wrapper">
+    <div class="describe--wrapper__title">{{title}}</div>
+    <p class="describe--wrapper__description">{{describe}}</p>
   </div>
+  {{/with}}
   <div class="our-service--items">
     {{#each our-service.items}}
       {{>our-service-card}}
+    {{/each}}
+  </div>
+</div>
+
+<div class="why-choose-section">
+  {{#with describe.items.[1]}}
+  <div class="describe--wrapper">
+    <div class="describe--wrapper__title">{{title}}</div>
+    <p class="describe--wrapper__description">{{describe}}</p>
+  </div>
+  {{/with}}
+  <div class="why-choose--items">
+    {{#each why-choose.items}}
+      {{> why-choose-card}}
     {{/each}}
   </div>
 </div>

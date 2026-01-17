@@ -1,11 +1,11 @@
-.our-service {
+.our-service-section {
   display: flex;
   flex-direction: column;
 }
 
 
 
-.our-service--wrapper {
+.describe--wrapper {
   background-image: url(".././images/bg-our-service.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -19,7 +19,7 @@
     text-align: center;
   }
 
-  &__subtitle {
+  &__description {
     font-family: inherit;
     font-size: 1.8rem;
     text-align: center;
@@ -50,6 +50,9 @@
     padding: 2.4rem;
     border-radius: 1rem;
     background: linear-gradient(#242424, transparent);
+    object-fit: cover;
+    max-width: 100%;
+    max-height: 100%;
 
     &::after {
       content: "";

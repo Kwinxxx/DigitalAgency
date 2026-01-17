@@ -4,7 +4,8 @@
   max-width: 100%;
   border-bottom: .15rem solid $grey-15;
   z-index: 999;
-  background-color: rgba;
+  background-color: rgba($color-background, 0.5);
+  backdrop-filter: blur($blur);
 
   display: flex;
   justify-content: space-between;

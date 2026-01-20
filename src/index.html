@@ -61,3 +61,17 @@ that will Work</div>
     {{/each}}
   </div>
 </div>
+
+<div class="about-us-section">
+   {{#with describe.items.[2]}}
+  <div class="describe--wrapper">
+    <div class="describe--wrapper__title">{{title}}</div>
+    <p class="describe--wrapper__description">{{describe}}</p>
+  </div>
+  {{/with}}
+  <div class="about-us--items">
+    {{#each about-us.items}}
+      {{> about-us-card}}
+    {{/each}}
+  </div>
+</div>

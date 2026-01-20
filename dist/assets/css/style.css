@@ -116,6 +116,16 @@ a, li, button {
     width: 100%;
 }
 
+.btn--open-website {
+    color: #ffffff;
+    background-color: #262626;
+    font-family: inherit;
+    font-size: 1.8rem;
+    font-weight: 500;
+    border-radius: 0.8rem;
+    text-align: center;
+}
+
 .hero-section {
     display: -ms-flexbox;
     display: flex;
@@ -231,12 +241,14 @@ a, li, button {
     text-align: center;
 }
 
-.describe--wrapper__describe {
+.describe--wrapper__description {
     font-family: inherit;
     font-size: 1.8rem;
     text-align: center;
     font-weight: 400;
     margin-top: 1.4rem;
+    color: #e6e6e6;
+    margin: 3rem;
 }
 
 .our-service--items {
@@ -291,4 +303,96 @@ a, li, button {
     color: #e6e6e6;
     letter-spacing: -0.6%;
     margin: 0;
+}
+
+.why-choose--items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0;
+}
+
+.why-choose-card {
+    padding: 8rem;
+    border: 0.15rem solid #262626;
+}
+
+.why-choose-content {
+    display: -ms-flexbox;
+    display: flex;
+    gap: 2rem;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.why-choose-content__title {
+    font-family: inherit;
+    font-size: 2.6rem;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+.why-choose-content__icon {
+    padding: 2.4rem;
+    border-radius: 1rem;
+    background: linear-gradient(#242424, transparent);
+    -o-object-fit: cover;
+    object-fit: cover;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.why-choose-description {
+    font-family: inherit;
+    font-size: 2rem;
+    font-weight: 400;
+    margin: 0;
+    letter-spacing: -0.6%;
+    line-height: 150%;
+    margin-top: 4rem;
+    color: #e6e6e6;
+}
+
+.about-us--items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.about-us-card {
+    border: 0.15rem solid #262626;
+    padding: 10rem 8rem;
+}
+
+.about-us-card-title {
+    font-family: inherit;
+    font-size: 2.8rem;
+    font-weight: 500;
+    color: #d8ff99;
+}
+
+.about-us-card-descrption {
+    font-family: inherit;
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: #e6e6e6;
+    margin-top: 2.4rem;
+}
+
+.about-us-card-person {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-top: 4rem;
+    padding: 2rem;
+    background-color: rgba(36, 36, 36, 0.2);
+    border: 0.1rem solid #262626;
+    border-radius: 0.8rem;
+}
+
+.about-us-card-person-wrapper {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 1.8rem;
 }

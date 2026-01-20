@@ -31,4 +31,14 @@
     width: 100%;
     }
   }
+
+  &--open-website {
+    color: $white;
+    background-color: $grey-15;
+
+    font-family: inherit;
+    font-size: 1.8rem;
+    font-weight: 500;
+    border-radius: $btn-border-radius;
+  }
 }

@@ -98,6 +98,14 @@ a, li, button {
   margin-top: auto;
   width: 100%;
 }
+.btn--open-website {
+  color: #ffffff;
+  background-color: #262626;
+  font-family: inherit;
+  font-size: 1.8rem;
+  font-weight: 500;
+  border-radius: 0.8rem;
+}
 
 .hero-section {
   display: flex;
@@ -202,6 +210,8 @@ a, li, button {
   text-align: center;
   font-weight: 400;
   margin-top: 1.4rem;
+  color: #e6e6e6;
+  margin: 3rem;
 }
 
 .our-service--items {
@@ -292,4 +302,46 @@ a, li, button {
   line-height: 150%;
   margin-top: 4rem;
   color: #e6e6e6;
+}
+
+.about-us--items {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.about-us-card {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  border: 0.15rem solid #262626;
+  padding: 10rem 8rem;
+}
+.about-us-card-title {
+  font-family: inherit;
+  font-size: 2.8rem;
+  font-weight: 500;
+  color: #d8ff99;
+}
+.about-us-card-descrption {
+  font-family: inherit;
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #e6e6e6;
+  margin-top: 2.4rem;
+}
+
+.about-us-card-person {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+  padding: 2rem;
+  background-color: rgba(36, 36, 36, 0.2);
+  border: 0.1rem solid #262626;
+  border-radius: 0.8rem;
+}
+.about-us-card-person-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 1.8rem;
 }

@@ -1,0 +1,47 @@
+.about-us--items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.about-us-card {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+
+    border: .15rem solid $grey-15;
+    padding: 10rem 8rem;
+
+    &-title {
+        font-family: inherit;
+        font-size: 2.8rem;
+        font-weight: 500;
+        color: $green-80;
+    }
+
+    &-descrption {
+        font-family: inherit;
+        font-size: 1.8rem;
+        font-weight: 400;
+        color: $grey-90;
+        margin-top: 2.4rem;
+    }
+}
+
+.about-us-card-person {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top: auto;
+    padding: 2rem;
+    background-color: rgba(#242424, 0.2);
+    border: 0.1rem solid $grey-15;
+    border-radius: $btn-border-radius;
+
+
+    &-wrapper {
+        display: flex;
+        align-items: center;
+        gap: 1.8rem;
+    }
+}

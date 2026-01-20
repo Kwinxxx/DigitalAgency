@@ -13,6 +13,11 @@
     {
       "title" : "What our Clients say About us",
       "describe" : "At SquareUp, we take pride in delivering exceptional digital products and services that drive success for our clients. Here's what some of our satisfied clients have to say about their experience working with us"
+    },
+
+    {
+      "title" : "Frequently Asked Questions",
+      "describe" : "Still you have any questions? Contact our Team via hello@squareup.com"
     }
   ]
 }

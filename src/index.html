@@ -75,3 +75,17 @@ that will Work</div>
     {{/each}}
   </div>
 </div>
+
+<div class="ask-question-section">
+  {{#with describe.items.[3]}}
+  <div class="describe--wrapper">
+    <div class="describe--wrapper__title">{{title}}</div>
+    <p class="describe--wrapper__description">{{describe}}</p>
+  </div>
+  {{/with}}
+  <div class="list-ask-questions">
+    {{#each list-asked-questions.items}}
+      {{> list-asked-questions-card}}
+    {{/each}}
+  </div>
+</div>

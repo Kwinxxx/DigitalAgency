@@ -1,0 +1,123 @@
+.logo-position {
+  margin-inline: auto;
+  margin-bottom: 5rem;
+  scale: 150%;
+}
+
+.form-wrapper {
+  margin-inline: calc($width-container * 1.3);
+  border: .15rem solid $grey-15;
+
+  padding: 8rem;
+}
+
+
+
+.form-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, auto);
+  gap: 4rem;
+
+  &-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: rgba(#242424, 0.5);
+    border-radius: $btn-border-radius;
+    padding: 4rem;
+  }
+
+  &-name {
+
+    &__info {
+      font-family: inherit;
+      font-size: 2.22rem;
+      font-weight: 500;
+      color: $white;
+    }
+
+    &__input {
+      font-family: inherit;
+      font-weight: 400;
+      font-size: 1.8rem;
+      color: $grey-40;
+      background-color: transparent;
+      border: 0;
+      border-bottom: .1rem solid $grey-20;
+      color: $white;
+      &:focus {
+        outline: 0;
+      }
+    }
+  }
+
+  &-grid {
+
+    &-questions {
+      grid-column: span 2 / span 2;
+    }
+
+    &-budget {
+      grid-column: span 2 / span 2;
+
+      &__describe {
+        font-family: inherit;
+        font-size: 1.8rem;
+        font-weight: 400;
+        color: $grey-90;
+      }
+
+      &__range {
+      }
+    }
+
+    &-message {
+      grid-column: span 2 / span 2;
+    }
+
+  }
+  &-checkboxes-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 2.4rem;
+    column-gap: 2rem;
+    margin-top: 4rem;
+  }
+
+  &-checkbox {
+    appearance: none;
+    position: relative;
+    height: 2.8rem;
+    width: 2.8rem;
+    background: $grey-15;
+    border-radius: .4rem;
+    border: .1rem solid $grey-20;
+
+    &:checked::after {
+      content: "\2714";
+      position: absolute;
+      top: -5px;
+      left: 2px;
+      width: 0;
+      height: 0;
+      font-size: 2.6rem;
+      color: $green-50;
+  }
+
+    &-wrapper {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+    }
+
+    &-name {
+      font-weight: inherit;
+      font-size: 1.8rem;
+      font-weight: 400;
+      color: $green-99;
+    }
+  }
+
+}
+

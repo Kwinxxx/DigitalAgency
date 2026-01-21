@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*COLORS*/
 @import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 html {
@@ -67,8 +68,6 @@ a, li, button {
 
 .main {
   margin: 0 16.2rem;
-  border-right: 0.15rem solid #262626;
-  border-left: 0.15rem solid #262626;
 }
 
 .btn {
@@ -105,6 +104,27 @@ a, li, button {
   font-size: 1.8rem;
   font-weight: 500;
   border-radius: 0.8rem;
+}
+.btn--form {
+  background: #9eff00;
+  color: #212121;
+  font-weight: 500;
+}
+.btn--form-location {
+  display: block;
+  margin-inline: auto;
+  margin-top: 5rem;
+}
+.btn--submit {
+  background: #9eff00;
+  color: #212121;
+  font-weight: 500;
+  scale: 1.2;
+}
+.btn--submit-location {
+  display: block;
+  margin-inline: auto;
+  margin-top: 5rem;
 }
 
 .hero-section {
@@ -193,25 +213,37 @@ a, li, button {
 }
 
 .describe--wrapper {
+  position: relative;
+  padding: 12rem 0;
+}
+.describe--wrapper::after {
   background-image: url(".././images/bg-our-service.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  padding: 12rem 0;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  filter: brightness(0.2);
 }
 .describe--wrapper__title {
   font-family: inherit;
   font-size: 4.8rem;
   font-weight: 600;
   text-align: center;
+  z-index: 1;
 }
 .describe--wrapper__description {
   font-family: inherit;
   font-size: 1.8rem;
   text-align: center;
   font-weight: 400;
-  margin-top: 1.4rem;
   color: #e6e6e6;
-  margin: 3rem;
+  margin-top: 1.4rem;
+  margin-inline: 5rem;
+  z-index: 1;
 }
 
 .our-service--items {
@@ -345,6 +377,18 @@ a, li, button {
   align-items: center;
   gap: 1.8rem;
 }
+.about-us-card-person-info__name {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 2rem;
+  color: #ffffff;
+}
+.about-us-card-person-info__work {
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 1.8rem;
+  color: #e6e6e6;
+}
 
 .list-ask-questions {
   display: grid;
@@ -354,18 +398,213 @@ a, li, button {
 .list-ask-questions-card {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   gap: 2rem;
   border: 0.15rem solid #262626;
   padding: 3rem 5rem;
 }
 .list-ask-questions-card-wrapper {
-  padding: 2rem;
-  align-self: senter;
-  background: linear-gradient(#242424, transparent);
-  border-radius: 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
 }
 .list-ask-questions-card__number {
   color: #ffffff;
   font-size: 2.8rem;
   font-weight: 600;
+  padding: 2rem;
+  align-self: center;
+  background: linear-gradient(#242424, transparent);
+  border-radius: 1.2rem;
+}
+.list-ask-questions-card__question {
+  font-family: inherit;
+  font-size: 2.2rem;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.logo-position {
+  margin-inline: auto;
+  margin-bottom: 5rem;
+  scale: 150%;
+}
+
+.form-wrapper {
+  margin-inline: 21.06rem;
+  border: 0.15rem solid #262626;
+  padding: 8rem;
+}
+
+.form-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, auto);
+  gap: 4rem;
+}
+.form-content-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  background-color: rgba(36, 36, 36, 0.5);
+  border-radius: 0.8rem;
+  padding: 4rem;
+}
+.form-content-name__info {
+  font-family: inherit;
+  font-size: 2.22rem;
+  font-weight: 500;
+  color: #ffffff;
+}
+.form-content-name__input {
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 1.8rem;
+  color: #656567;
+  background-color: transparent;
+  border: 0;
+  border-bottom: 0.1rem solid #333333;
+  color: #ffffff;
+}
+.form-content-name__input:focus {
+  outline: 0;
+}
+.form-content-grid-questions {
+  grid-column: span 2/span 2;
+}
+.form-content-grid-budget {
+  grid-column: span 2/span 2;
+}
+.form-content-grid-budget__describe {
+  font-family: inherit;
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #e6e6e6;
+}
+.form-content-grid-message {
+  grid-column: span 2/span 2;
+}
+.form-content-checkboxes-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 2.4rem;
+  column-gap: 2rem;
+  margin-top: 4rem;
+}
+.form-content-checkbox {
+  appearance: none;
+  position: relative;
+  height: 2.8rem;
+  width: 2.8rem;
+  background: #262626;
+  border-radius: 0.4rem;
+  border: 0.1rem solid #333333;
+}
+.form-content-checkbox:checked::after {
+  content: "✔";
+  position: absolute;
+  top: -5px;
+  left: 2px;
+  width: 0;
+  height: 0;
+  font-size: 2.6rem;
+  color: #9eff00;
+}
+.form-content-checkbox-wrapper {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.form-content-checkbox-name {
+  font-weight: inherit;
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #fdfffa;
+}
+
+.footer-info {
+  max-width: 100%;
+  border-top: 0.15rem solid #262626;
+  background-color: rgba(25, 25, 25, 0.5);
+  backdrop-filter: blur(0.5rem);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 16.2rem;
+}
+.footer-contacts {
+  max-width: 100%;
+  background-color: rgba(25, 25, 25, 0.5);
+  backdrop-filter: blur(0.5rem);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 16.2rem;
+  margin-bottom: 5rem;
+}
+.footer-contacts-text {
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 1.8rem;
+  color: #98989A;
+}
+.footer-contacts-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+}
+.footer-contacts-wrapper__item {
+  display: flex;
+  gap: 1rem;
+  align-items: сenter;
+  border-bottom: 0.15rem solid #262626;
+  padding-bottom: 1.5rem;
+}
+.footer-contacts-wrapper__item__img {
+  width: 2.4rem;
+  height: 2, 4rem;
+  scale: 1.2;
+}
+.footer-contacts-wrapper__item__text {
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 1.8rem;
+  color: #e6e6e6;
+}
+
+.separator {
+  margin-inline: 16.2rem;
+  height: 0.1rem;
+  background-color: #262626;
+  margin-block: 5rem;
+}
+
+.socials {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 1.4rem;
+  padding-left: 2.4rem;
+  gap: 2rem;
+  border: 0.1rem solid #262626;
+  border-radius: 1.2rem;
+}
+.socials-name {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 1.8rem;
+  color: #e6e6e6;
+}
+.socials-wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.4rem;
+}
+
+.social-item {
+  padding: 2rem;
+  background: linear-gradient(#242424, transparent);
+  border-radius: 0.8rem;
 }

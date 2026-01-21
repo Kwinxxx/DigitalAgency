@@ -41,4 +41,30 @@
     font-weight: 500;
     border-radius: $btn-border-radius;
   }
+
+  &--form {
+    background: $green-50;
+    color: $grey-10;
+    font-weight: 500;
+
+    &-location {
+        display: block;
+        margin-inline: auto;
+        margin-top: 5rem;
+    }
+  }
+
+  &--submit {
+    background: $green-50;
+    color: $grey-10;
+    font-weight: 500;
+    scale: 1.2;
+
+    &-location {
+      display: block;
+      margin-inline: auto;
+      margin-top: 5rem;
+    }
+  }
+
 }

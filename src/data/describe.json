@@ -16,8 +16,13 @@
     },
 
     {
-      "title" : "Frequently Asked Questions",
-      "describe" : "Still you have any questions? Contact our Team via hello@squareup.com"
+    "title" : "Frequently Asked Questions",
+    "describe" : "Still you have any questions? Contact our Team via hello@squareup.com"
+    },
+
+    {
+    "title" : "Thank you for your Interest in SquareUp.",
+    "describe" : "We would love to hear from you and discuss how we can help bring your digital ideas to life. Here are the different ways you can get in touch with us."
     }
   ]
 }

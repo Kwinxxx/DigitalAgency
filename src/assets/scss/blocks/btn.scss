@@ -10,6 +10,13 @@
 
   white-space: nowrap;
 
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    filter: brightness(0.8);
+    scale: 1.05;
+  }
+
   &--contact-us {
     background: $green-50;
     color: $grey-15

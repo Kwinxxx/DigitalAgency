@@ -78,6 +78,11 @@ a, li, button {
   font-size: 1.8rem;
   color: #262626;
   white-space: nowrap;
+  transition: all 0.2s ease-in-out;
+}
+.btn:hover {
+  filter: brightness(0.8);
+  scale: 1.05;
 }
 .btn--contact-us {
   background: #9eff00;

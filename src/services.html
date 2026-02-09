@@ -1,0 +1,32 @@
+---
+layout: services
+title: Digital Agency Company | Services
+---
+<div class="our-service-section">
+  {{#with describe.items.[0]}}
+  <div class="describe--wrapper">
+    <div class="describe--wrapper__title">{{title}}</div>
+    <p class="describe--wrapper__description">{{describe}}</p>
+  </div>
+  {{/with}}
+</div>
+
+<div class="exp-describe-section">
+    {{#with experience.items.[0]}}
+    <div class="exp-describe__wrapper">
+        <div class="exp-describe__title">{{title}}</div>
+        <p class="exp-describe__description">{{describe}}</p>
+        <span class="exp-describe__include">Our design services include:</span>
+    </div>
+    {{/with}}
+    {{#with experience-card.titles.[0]}}
+    <div class="exp-list-wrapper">
+        <div class="exp-list__title">{{title}}</div>
+    {{/with}}
+        <div class="exp-list-cards-wrapper">
+            {{#each experience-card.items}}
+                {{>experience-card}}
+            {{/each}}
+        </div>
+    </div>
+</div>

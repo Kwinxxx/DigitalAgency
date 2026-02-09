@@ -91,6 +91,13 @@ a, li, button {
     font-size: 1.8rem;
     color: #262626;
     white-space: nowrap;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn:hover {
+    -webkit-filter: brightness(0.8);
+    filter: brightness(0.8);
+    scale: 1.05;
 }
 
 .btn--contact-us {

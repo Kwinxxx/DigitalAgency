@@ -15,10 +15,6 @@ body {
     color: $white;
 }
 
-.main {
-
-}
-
 a,li, button {
     text-decoration: none;
     color: inherit;
@@ -39,3 +35,5 @@ a,li, button {
 @import 'blocks/ask-question';
 @import 'blocks/form';
 @import 'blocks/footer';
+
+@import 'blocks/services';

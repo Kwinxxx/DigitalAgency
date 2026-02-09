@@ -1,0 +1,32 @@
+{
+    "items": [
+        {
+            "img": "./assets/images/experience-icons/1.png",
+            "description": "User Research and Persona Development"
+        },
+        {
+            "img": "./assets/images/experience-icons/2.png",
+            "description": "Information Architecture and Wireframing"
+        },  
+        {
+            "img": "./assets/images/experience-icons/3.png",
+            "description": "Interactive Prototyping and User Testing"
+        },  
+        {
+            "img": "./assets/images/experience-icons/4.png",
+            "description": "UI Design and Visual Branding"
+        }
+    ],
+
+    "titles": [
+        {
+            "title" : "User Experience (UX) Design"
+        },
+        {
+            "title" : "User Experience (UX) Design"
+        },
+        {
+            "title" : "User Experience (UX) Design"
+        }
+    ]
+}
